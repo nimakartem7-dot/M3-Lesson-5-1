@@ -24,6 +24,9 @@ class Class(models.Model):
     name = models.CharField(max_length = 10, unique = True)
     study_year = models.PositiveIntegerField()
 
+    class Meta:
+        verbose_name_plural = "Classes"
+
     def __str__(self):
         return self.name
 
